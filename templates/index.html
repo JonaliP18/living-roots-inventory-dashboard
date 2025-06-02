@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Living Roots Inventory</title>
+</head>
+<body>
+    <h1>Living Roots Inventory</h1>
+    <table border="1">
+        <tr>
+            <th>Product</th>
+            <th>Stock</th>
+        </tr>
+        {% for item in inventory %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.stock }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
